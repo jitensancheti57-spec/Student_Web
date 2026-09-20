@@ -95,7 +95,7 @@ footer { border-top: 1px solid var(--line); display: flex; font-family: 'DM Mono
         <section class="workspace-section" id="workspace">
             <div class="workspace-copy"><p class="eyebrow">YOUR WORKSPACE</p><h2>Put your idea on the wall.</h2><p>Share what you are building and give your next idea a clear starting point. You can update or remove projects saved in this browser.</p></div>
             <form class="project-form" id="projectForm">
-                <div class="form-row"><label>Project name<input id="projectName" required maxlength="48" placeholder="e.g. Campus Cycle"></label><label>Your name<input id="studentName" required maxlength="36" placeholder="e.g. Aisha Khan"></label></div>
+                <div class="form-row"><label>Project name<input id="projectName" required maxlength="48" placeholder="e.g. Campus Cycle"></label><label>Your name<input id="studentName" required maxlength="36" placeholder="Jiten Sancheti"></label></div>
                 <div class="form-row"><label>Discipline<select id="projectCategory"><option>Technology</option><option>Design</option><option>Sustainability</option><option>Education</option></select></label><label>Stage<select id="projectStatus"><option>Building</option><option>Review</option><option>Live</option></select></label></div>
                 <label>Short description<textarea id="projectDescription" required maxlength="180" placeholder="What problem does it solve?"></textarea></label>
                 <button class="button button-dark" type="submit">Publish project <span>↗</span></button>
@@ -111,12 +111,12 @@ footer { border-top: 1px solid var(--line); display: flex; font-family: 'DM Mono
 
     <script>
 const starterProjects = [
-    { id: 1, name: "AI Study Assistant", owner: "Mira Shah", category: "Technology", status: "Live", description: "A calm, adaptive study companion that helps students plan revision around their actual energy and schedule." },
-    { id: 2, name: "Campus Cycle", owner: "Jon Bell", category: "Sustainability", status: "Building", description: "A community-powered map for sharing bikes, repair points, and safer routes between campus buildings." },
-    { id: 3, name: "Open Notes", owner: "Leena Rao", category: "Education", status: "Review", description: "A searchable library where students turn their best course notes into useful, accessible learning resources." },
-    { id: 4, name: "Pocket Portfolio", owner: "Noah Williams", category: "Design", status: "Live", description: "A tiny portfolio builder for students who want to show the thinking behind their finished work." },
-    { id: 5, name: "Lab Lens", owner: "Priya Nair", category: "Technology", status: "Building", description: "A visual dashboard that makes environmental sensor readings understandable at a glance." },
-    { id: 6, name: "Food Loop", owner: "Sam Okafor", category: "Sustainability", status: "Review", description: "A campus food-sharing network that helps surplus meals find hungry students before they become waste." }
+    { id: 1, name: "AI Study Assistant", owner: "Jiten Sancheti", category: "Technology", status: "Live", description: "A calm, adaptive study companion that helps students plan revision around their actual energy and schedule." },
+    { id: 2, name: "Campus Cycle", owner: "Jiten Sancheti", category: "Sustainability", status: "Building", description: "A community-powered map for sharing bikes, repair points, and safer routes between campus buildings." },
+    { id: 3, name: "Open Notes", owner: "Jiten Sancheti", category: "Education", status: "Review", description: "A searchable library where students turn their best course notes into useful, accessible learning resources." },
+    { id: 4, name: "Pocket Portfolio", owner: "Jiten Sancheti", category: "Design", status: "Live", description: "A tiny portfolio builder for students who want to show the thinking behind their finished work." },
+    { id: 5, name: "Lab Lens", owner: "Jiten Sancheti", category: "Technology", status: "Building", description: "A visual dashboard that makes environmental sensor readings understandable at a glance." },
+    { id: 6, name: "Food Loop", owner: "Jiten Sancheti", category: "Sustainability", status: "Review", description: "A campus food-sharing network that helps surplus meals find hungry students before they become waste." }
 ];
 
 const savedProjects = JSON.parse(localStorage.getItem("projecthub-projects") || "null");
